@@ -1,0 +1,153 @@
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-areas: 
+    "title website"
+    "image text";
+  gap: 48px 40px;
+}
+
+.place__title {
+  font-size: 72px;
+  line-height: 1.06;
+  font-weight: 900;
+  margin: 0;
+  grid-area: title;
+}
+
+.place__website {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-area: website;
+}
+
+.place__url-heading {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #AAAAAA;
+  margin: 0 0 8px;
+}
+
+.place__link {
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.place__link:hover {
+  opacity: 0.8;
+}
+
+.place__image {
+  width: 100%;
+  height: auto;
+  grid-area: image;
+}
+
+.place__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-area: text;
+}
+
+.place__paragraph {
+  font-size: 18px;
+  line-height: 1.63;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 1280px) {
+  .place {
+    grid-template-columns: 460px 1fr;
+    gap: 48px 40px;
+  }
+  
+  .place__title {
+    font-size: 72px;
+    line-height: 1.06;
+  }
+  
+  .place__paragraph {
+    font-size: 18px;
+    line-height: 1.63;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-template-columns: 440px 1fr;
+    gap: 48px 32px;
+  }
+  
+  .place__title {
+    font-size: 72px;
+    line-height: 1.06;
+  }
+  
+  .place__paragraph {
+    font-size: 18px;
+    line-height: 1.63;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "title"
+      "website"
+      "image"
+      "text";
+    gap: 32px;
+  }
+  
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+  
+  .place__text {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "title"
+      "website"
+      "image"
+      "text";
+    gap: 32px;
+  }
+  
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+  
+  .place__text {
+    gap: 25px;
+  }
+} 

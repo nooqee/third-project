@@ -1,0 +1,50 @@
+.places {
+  padding: 0 0 92px;
+}
+
+.places__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 1280px) {
+  .places {
+    padding: 0 0 92px;
+  }
+  
+  .places__container {
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    padding: 0 0 92px;
+  }
+  
+  .places__container {
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    padding: 0 0 90px;
+  }
+  
+  .places__container {
+    gap: 73px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .places {
+    padding: 0 0 66px;
+  }
+  
+  .places__container {
+    gap: 50px;
+  }
+} 
