@@ -23,7 +23,7 @@
 ## Структура проекта
 
 ```
-third-sprint/
+third-project/
 ├── index.html              # Главная страница
 ├── pages/
 │   └── index.css           # Основные стили
